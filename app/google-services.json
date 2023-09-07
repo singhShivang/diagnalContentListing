@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "533273624108",
+    "project_id": "diagnalcontent",
+    "storage_bucket": "diagnalcontent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533273624108:android:343284297b4286a6cd1b89",
+        "android_client_info": {
+          "package_name": "com.diagnal.contentlisting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533273624108-uk2ntf6pi8hbbkl554vqq1h9ercot85v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVhufGtxYDOCWxB7QCmivZzCvI_3tkGVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533273624108-uk2ntf6pi8hbbkl554vqq1h9ercot85v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
