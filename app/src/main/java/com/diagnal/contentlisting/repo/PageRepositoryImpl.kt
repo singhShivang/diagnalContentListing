@@ -2,6 +2,8 @@ package com.diagnal.contentlisting.repo
 
 import com.diagnal.contentlisting.di.ContextProvider
 import com.diagnal.contentlisting.model.PageData
+import com.google.firebase.crashlytics.ktx.crashlytics
+import com.google.firebase.ktx.Firebase
 import com.google.gson.Gson
 import java.io.InputStream
 import java.nio.charset.Charset
@@ -21,6 +23,7 @@ class PageRepositoryImpl : IPageRepository {
             inputStream?.close()
             jsonString = buffer?.let { String(it, Charset.defaultCharset()) }
         } catch (e: Exception) {
+            Firebase.crashlytics.recordException(e)
             e.printStackTrace()
         }
 
@@ -48,6 +51,7 @@ class PageRepositoryImpl : IPageRepository {
             }
 
             else -> {
+                Firebase.crashlytics.log("No file Found for pageNum: $pageNum")
                 return "invalid"
             }
         }
